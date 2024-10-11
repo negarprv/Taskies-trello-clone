@@ -1,0 +1,3 @@
+{
+  "extends": "@taskies/typescript/base.json"
+}
