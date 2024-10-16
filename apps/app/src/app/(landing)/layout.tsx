@@ -1,5 +1,7 @@
 import { Navigation } from "@/components/landing/Navbar";
 
+
+
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className=" max-h-screen overflow-hidden"  >
