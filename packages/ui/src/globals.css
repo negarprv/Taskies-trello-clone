@@ -67,3 +67,90 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .h1-medium {
+    @apply text-[40px] font-medium leading-[64px]  tracking-wide;
+  }
+
+  .h2-medium {
+    @apply text-[32px] font-medium leading-[60px] tracking-wide;
+  }
+
+  .small-medium {
+    @apply text-[12px] font-medium leading-[15.6px];
+  }
+
+  .h2-bold {
+    @apply text-[24px] font-bold leading-[31.2px];
+  }
+  .h2-semibold {
+    @apply text-[24px] font-semibold leading-[31.2px];
+  }
+
+  .h2-medium {
+    @apply text-[24px] font-medium leading-[38.4px];
+  }
+  .h3-bold {
+    @apply text-[20px] font-bold leading-[26px];
+  }
+  .h3-semibold {
+    @apply text-[20px] font-semibold leading-[24.8px];
+  }
+
+  .h3-medium {
+    @apply text-[20px] font-medium leading-[24.8px];
+  }
+
+  .h3-regular {
+    @apply text-[20px] font-normal leading-[24.8px];
+  }
+
+  .base-medium {
+    @apply text-[18px] font-medium leading-[25.2px];
+  }
+  .base-semibold {
+    @apply text-[18px] font-semibold leading-[28.2px];
+  }
+  .base-bold {
+    @apply text-[18px] font-bold leading-[140%];
+  }
+
+  .base-regular {
+    @apply text-[18px] font-normal leading-[28px];
+  }
+  .paragraph-regular {
+    @apply text-[16px] font-normal leading-[23.5px];
+  }
+  .paragraph-medium {
+    @apply text-[16px] font-medium leading-[25.4px];
+  }
+  .paragraph-semibold {
+    @apply text-[16px] font-semibold leading-[20.8px];
+  }
+  .body-regular {
+    @apply text-[14px] font-normal leading-[23.5px];
+  }
+  .body-medium {
+    @apply text-[14px] font-medium leading-[18.2px];
+  }
+  .body-semibold {
+    @apply text-[14px] font-semibold leading-[18.2px];
+  }
+  .small-regular {
+    @apply text-[12px] font-normal leading-[15.6px];
+  }
+
+  .small-semibold {
+    @apply text-[12px] font-semibold leading-[15.6px];
+  }
+  .subtle-medium {
+    @apply text-[10px] font-medium leading-[13px];
+  }
+  .subtle-regular {
+    @apply text-[10px] font-normal leading-[13px];
+  }
+  .subtle-semibold {
+    @apply text-[10px] font-semibold leading-[13px];
+  }
+}

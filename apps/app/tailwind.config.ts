@@ -1,5 +1,5 @@
-import baseConfig from "@v1/ui/tailwind.config";
-// import baseConfig from "@taskies/ui/tailwind.config";
+
+import baseConfig from "@taskies/ui/tailwind.config";
 import type { Config } from "tailwindcss";
 
 export default {
