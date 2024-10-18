@@ -5,7 +5,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
     <div className=" max-h-screen overflow-hidden"  >
     
      <Navigation/>
-      <main className=" md:pt-10 pt-2 pb-20 bg-slate-100"> {children}</main>
+      <main className=" md:pt-10 pt-2 pb-20 "> {children}</main>
     </div>
   );
 };

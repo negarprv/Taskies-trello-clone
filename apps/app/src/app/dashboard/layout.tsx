@@ -1,4 +1,15 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
-  // This is where your authenticated app lives, add a sidebar, header etc.
-  return children;
+import AdminPanelLayout from "@/components/dashboard/admin-panel/admin-panel-layout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Taskify dashboard",
+};
+
+
+export default async function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return <AdminPanelLayout>{children}</AdminPanelLayout>;
 }

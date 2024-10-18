@@ -2,6 +2,10 @@ import "@taskies/ui/globals.css";
 import { cn } from "@taskies/ui/cn";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { siteConfig } from "@/utils/config/site";
+import { Toaster } from "react-hot-toast";
+import Providers from "@/utils/providers/Providers";
+
 
 
 const poppins = Poppins({
@@ -10,8 +14,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Task Management",
-  description: "Taskies makes it easier for teams to manage projects and tasks",
+  title: {
+    default:siteConfig.title,
+    template:`%s | ${siteConfig.title}`
+  },
+  description: siteConfig.description,
+  icons:[
+    {
+      url:"/logo-withoutTitle.svg",
+      href:"/logo-withoutTitle.svg",
+    }
+  ]
 };
 
 
@@ -23,10 +36,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(poppins.className, " h-full ", "bg-slate-100")}
+        className={cn(poppins.className, " h-full ", "bg-white", )}
       >
-          {children}
+           <Providers>
+            {children}
+           <Toaster />
+           </Providers>
+           
       </body>
     </html>
+
   );
 }
